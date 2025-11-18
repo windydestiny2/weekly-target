@@ -8,6 +8,15 @@
 </head>
 <body>
     <div class="container">
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="schedule.html">Atur Jadwal</a>
+                <a href="about.html">About</a>
+            </div>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </nav>
+
         <h1>Pilih Jadwal Belajar Mingguan</h1>
         <form id="scheduleForm">
             <div class="form-group">
@@ -29,8 +38,8 @@
             <button type="submit">Simpan Jadwal</button>
         </form>
         <div id="status"></div>
-        <a href="dashboard.html" style="text-align: center; display: block; margin-top: 20px;">Kembali ke Dashboard</a>
     </div>
     <script src="script.js"></script>
+    <script src="navbar.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dasbor Progres Mingguan</title>
+    <title>StudyFlow - Dashboard</title>
     <link rel="stylesheet" href="style.css" />
     <style>
         /* Tambahan style khusus untuk dasbor */
@@ -23,7 +23,16 @@
 </head>
 <body>
     <div class="container">
-        <h1>Progres Mingguan Anda</h1>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="schedule.html">Atur Jadwal</a>
+                <a href="about.html">About</a>
+            </div>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </nav>
+
+        <h1>StudyFlow - Progres Mingguan</h1>
 
         <button id="checkInBtn" style="display: block; margin: 20px auto;">Check In Today</button>
         <p id="checkInStatus"></p>
@@ -33,16 +42,11 @@
         <div class="chart-container">
             <canvas id="weeklyProgressChart"></canvas>
         </div>
-
-        <a href="schedule.html" style="text-align: center; display: block; margin-top: 20px;">
-            Atur Ulang Target Belajar
-        </a>
-
-        <button id="logoutBtn" style="display: block; margin: 20px auto;">Logout</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
+
     <script src="dashboard.js"></script>
+    <script src="navbar.js"></script>
 </body>
 </html>

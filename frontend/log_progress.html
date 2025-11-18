@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log Progres Harian</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* CSS tambahan agar terlihat lebih baik */
+        #logBtn {
+            background: #2ecc71; /* Warna hijau untuk progress */
+        }
+        #logBtn:hover {
+            background: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Catat Progres Harian Anda</h1>
+        <p>Tekan tombol di bawah setelah Anda menyelesaikan sesi belajar hari ini.</p>
+        
+        <form id="logForm">
+            <textarea id="logNote" placeholder="Catatan sesi hari ini (opsional)"></textarea>
+            <button type="submit" id="logBtn">Log Sesi Belajar Hari Ini</button>
+        </form>
+        
+        <div id="statusMessage"></div>
+        
+        <a href="dashboard.html" style="text-align: center; display: block; margin-top: 20px;">
+            &larr; Kembali ke Dasbor Progres
+        </a>
+    </div>
+
+    <script src="log_progress.js"></script>
+</body>
+</html>
